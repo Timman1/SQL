@@ -1,0 +1,23 @@
+--Creat bakery store database.
+
+CREATE TABLE bakery (id INTEGER PRIMARY KEY, Name TEXT, Price NUMERIC, Quantity NUMERIC, Aisle NUMERIC);
+
+INSERT INTO bakery VALUES (1, "Country Buns", 12, 12, 1);
+INSERT INTO bakery VALUES (2, "Vanilla Cupcakes", 6, 6, 2);
+INSERT INTO bakery VALUES (3, "Apple Pie", 7.50, 1, 3);
+INSERT INTO bakery VALUES (4, "Butter Croissants", 4, 2, 1);
+INSERT INTO bakery VALUES (5, "Vanilla Cake", 15, 1, 4);
+INSERT INTO bakery VALUES (6, "Chocolate Croissants", 4.50, 2, 1);
+INSERT INTO bakery VALUES (7, "Chocolate Cake", 15, 1, 4);
+INSERT INTO bakery VALUES (8, "Chocolate Cupcakes", 6, 6, 2);
+INSERT INTO bakery VALUES (9, "Cherry Pie", 8, 1, 3);
+INSERT INTO bakery VALUES (10, "Pecan Pie", 9.50, 1, 3);
+INSERT INTO bakery VALUES (11, "Sugar Pie", 7.25, 1, 3);
+INSERT INTO bakery VALUES (12, "Blueberry", 8, 1, 3);
+INSERT INTO bakery VALUES (13, "Red Velvet Cake", 17.25, 1, 4);
+INSERT INTO bakery VALUES (14, "Spice Cake", 15, 1, 4);
+INSERT INTO bakery VALUES (15, "Birthday Cake", 20, 1, 4);
+
+--display the database by price over $9.
+
+SELECT * FROM bakery WHERE Price >9 ORDER BY Price DESC;
